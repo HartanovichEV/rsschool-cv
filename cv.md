@@ -32,6 +32,14 @@ for(var n = 0; n <= numbers.length - 1; n++){
 alert("Cумма всего массива: " + sum);
 ```
 ***
+6. __Courses:__
+   * School 21" in Moscow 1 month https://21-school.ru
+   * Basics of programming GeekBrains
+   * JavaScript/Front-endn Stage#1 RS Schools (in progress)
+***
+7. __Education:__ BSU and BSEU in Minsk
+***
+8. __English:__ B1
 
 
  
