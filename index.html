@@ -8,84 +8,82 @@
     <link rel="stylesheet" href="style.css">
     <title>CV HartanovichEV</title>
 </head>
-<body>
-    <div class="wrapper">
-    <Header>
-        <H1>Ekaterina Hartanovich</H1>
-        <nav>
+<body style="padding: 10px 0;">
+    <div class="container">
+        <div class="header">
+            <div class="title"><h1 style="color: rgb(0, 0, 93);">Ekaterina Hartanovich</h1></div>
+            <div class="foto"></div>
+        </div>
+        <div class="nav">
             <ul>
                 <li><a href="http://">Contacts</a></li>
-                <li><a href="http://">About Me</a></li>
                 <li><a href="http://">Skills</a></li>
-                <li><a href="http://">Code example</a></li>
                 <li><a href="http://">Courses</a></li>
+                <li><a href="http://">About Me</a></li>
+                <li><a href="http://">Code</a></li>                
                 <li><a href="http://">Education</a></li>
                 <li><a href="http://">English</a></li>
             </ul>
-        </nav>   
-    </Header>
-    <Section>
-        <h2>Contacts</h2>
-        <ul>
-            <li>Phone: +375 29 284 26 41</li>
-            <li>E-mail: alekseeve.ekaterina@gmail.com</li>
-            <li>Telegram: @HartanovichEV</li>
-        </ul>
-    </Section>
-    <Section>
-        <h2>About Me</h2>
-        <p>I am 31 years old,<br> 
-           I graduated from two universities: economic and law, I worked in a bank for 10 years. <br>
-           Now I am on maternity leave and have time to study the promising direction of IT. <br>
-           My goal after a year is to earn $ 1500 per month remote working. <br>
-           I have no experience in IT yet.</p>
-    </Section>
-    <Section>
-        <h2>Skills</h2>
-        <ul>
-            <li>JS</li>
-            <li>HTML, CSS</li>
-            <li>Git, GitHub</li>
-        </ul>
-    </Section>
-    <Section>
-        <h2>Code example</h2>
-        <pre>
-        <code>
-            var numbers = [];
-            var sum = 0;
-            var userAnswer = +prompt("Создаем массив из N элементов. Задайте число N");
-                
-            for(var i = 0; i < userAnswer; i++){
-                var random = parseInt(Math.random() * 100);
-                numbers.push(random);
-            }
-            alert ("Получился массив: " + numbers);
-                
-            var sum = 0;
-            for(var n = 0; n <= numbers.length - 1; n++){
-                 sum = sum + numbers[n];
-            }  
-            alert("Cумма всего массива: " + sum);
-        </code>
-        </pre>
-    </Section>
-    <Section>
-        <h2>Courses</h2>
-        <ul>
-            <li>School 21" in Moscow 1 month https://21-school.ru</li>
-            <li>Basics of programming GeekBrains</li>
-            <li>JavaScript/Front-endn Stage#1 RS Schools (in progress)</li>
-        </ul>
-    </Section>
-    <section>
-        <h2>Education:</h2> 
-        <strong>BSU and BSEU in Minsk</strong>
-    </section>
-    <section>
-        <h2>English:</h2> 
-        <strong>B1</strong>
-    </section>
+        </div>
+        <div class="content-wrapper">
+            <div class="block-contacts">
+                <div class="title-V"><h2>Contacts:</h2></div>
+                <ul class="ul__contacts">
+                    <li class="li_block">Phone: +375 29 284 26 41</li>
+                    <li class="li_block">E-mail: alekseeve.ekaterina@gmail.com</li>
+                    <li class="li_block">Telegram: @HartanovichEV</li>
+                    <li class="li_block">Belarus, Hrodna</li>
+                </ul>
+            </div>
+            <div class="sidebar"></div>
+        </div>
+        <div class="skills__courses-wrapper">
+            <div class="skills-block">
+                <div class="skills__courses-title"><h3>Skills:</h3></div>
+                <ul>
+                    <li class="li_block">JS</li>
+                    <li class="li_block">HTML, CSS</li>
+                    <li class="li_block">Git, GitHub</li>                                
+                </ul> 
+            </div>
+            <div class="cours-block">
+                <div class="skills__courses-title"><h3>Courses:</h3></div>
+                <ul>
+                    <li class="li_block">School 21" in Moscow 1 month https://21-school.ru</li>
+                    <li class="li_block">Basics of programming GeekBrains</li>
+                    <li class="li_block">JavaScript/Front-endn Stage#1 RS Schools (in progress)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="aboutme-wrapper">
+            <div class="block-aboutme">
+                <div class="title-V"><h2>About Me:</h2></div>
+                <div class="text-aboutme">
+                    I am 31 years old,<br> 
+                    I graduated from two universities: economic and law, I worked in a bank for 10 years. <br>
+                    Now I am on maternity leave and have time to study the promising direction of IT. <br>
+                    My goal after a year is to earn $ 1500 per month remote working. <br>
+                    I have no experience in IT yet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="code-wrapper">
+            <div class="skills__courses-title"><h3>Code example:</h3></div>
+            <img src="code.jpg" alt="code">
+        </div>
+        <div class="education__english-wrapper">
+            <div class="education-block">
+                <div class="title-V"><h2>Education:</h2></div>
+                <p class="text-ee">BSU and BSEU in Minsk</p>
+            </div>            
+            <div class="english-block">
+                <div class="title-V"><h2>English:</h2></div>
+                <p class="text-ee">B1 or Pre-Intermediate</p>
+            </div>
+        </div>
     </div>
+     <footer class="footer">
+        добавить ссылку на ваш гитхаб, год создания приложения, логотип курса со ссылкой на курс
+    </footer>
 </body>
 </html>
