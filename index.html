@@ -10,11 +10,14 @@
 </head>
 <body style="padding: 10px 0;">
     <div class="container">
-        <div class="header">
+       <header>
+         <div class="header">
             <div class="title"><h1 style="color: rgb(0, 0, 93);">Ekaterina Hartanovich</h1></div>
             <div class="foto"></div>
         </div>
-        <div class="nav">
+       </header>
+      <nav>
+         <div class="nav">
             <ul>
                 <li><a href="#contacts">Contacts</a></li>
                 <li><a href="#s-c">Skills</a></li>
@@ -25,7 +28,9 @@
                 <li><a href="#e-e">English</a></li>
             </ul>
         </div>
-        <div class="content-wrapper" id="contacts">
+      </nav>
+      <main>
+         <div class="content-wrapper" id="contacts">
             <div class="block-contacts">
                 <div class="title-V"><h2>Contacts:</h2></div>
                 <ul class="ul__contacts">
@@ -69,7 +74,17 @@
         </div>
         <div class="code-wrapper" id="code">
             <div class="skills__courses-title"><h3>Code example:</h3></div>
-            <img src="code.jpg" alt="code">
+            <pre>
+               <code>
+                  var numbers = [];
+                  var userAnswer = +prompt("Создаем массив из N элементов. Задайте число N");
+   
+                  for(var i = 1; i < (userAnswer + 1); i++){
+                     numbers.push(i);
+                  }
+                  alert (numbers)
+               </code>
+            </pre>
         </div>
         <div class="education__english-wrapper" id="e-e">
             <div class="education-block">
@@ -81,14 +96,16 @@
                 <p class="text-ee">B1 or Pre-Intermediate</p>
             </div>
         </div>
-        <footer class="footer-wrapper">
-            <div class="githab"><a class="a-footer" href="https://github.com/HartanovichEV">GitHub</a></div>
-            <div class="logo_school">
-                <img src="logo.svg" width="70" height="70" alt="logo">
-            </div>
-            <div class="webside_school"><a class="a-footer" href="https://rs.school/js/">RSSchool</a></div>
-            <div class="year">2021</div>
-       </footer>
+      </main>
+      <footer class="footer-wrapper">
+         <div class="githab"><a class="a-footer" href="https://github.com/HartanovichEV">GitHub</a></div>
+         <div class="logo_school">
+            <a href="https://rs.school/js/">
+               <img src="logo.svg" width="70" height="70" alt="logo">
+            </a>  
+         </div>
+         <div class="year">2022</div>
+      </footer>
     </div>     
 </body>
 </html>
