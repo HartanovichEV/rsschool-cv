@@ -51,15 +51,14 @@ ol, ul {
     font-size: 28px;
     font-weight: bold;
     display: flex;
-    width: 70%;
+    width: 72%;
     height: 100%;
     background: url(title.jpg) no-repeat center center / cover;    
 }
 .foto{
     display: flex;
-    width: 30%;
+    width: 28%;
     height: 100%;
-    background: url(ma1_9947-min.jpg) no-repeat center center / cover;
 }
 /*___Nav____________________________________________________*/
 .nav ul{
